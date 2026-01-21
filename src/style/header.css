@@ -8,7 +8,9 @@
   min-width: 500px;
   /* Espaço entre os elementos */
   gap: 150px;
+  background-color: blue;
 }
+/* Estilo do menu que escolhe as fontes */ 
 select {
   border: 1px solid #ddd;
   border-radius: 8px;
