@@ -1,4 +1,4 @@
-import "./style/SearchBar.css"
+import "../style/SearchBar.css"
 export default function SearchBar() {
     return(
         <div className="search_bar">

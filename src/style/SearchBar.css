@@ -1,4 +1,7 @@
-
+.search_bar{
+  width: 100%;
+  max-width: 900px;
+}
 input#pesquisa_id{
     /* Tamanho e formato */
     width: 100%;

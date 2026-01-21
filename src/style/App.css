@@ -4,9 +4,10 @@
 - Espaçamento global
 - Estrutura geral  */
 .app{
-  margin: auto; /* Centraliza */
   /* Limita a largura */
   max-width: 1200px; 
-  min-width: 900px;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

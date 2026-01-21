@@ -4,18 +4,24 @@
   /* Afasta o cabeçalho da borda superior */
   padding: 30px; 
   display: flex;
-  /* Largura mínima e máxima */
-  max-width: 750px;
-  min-width: 300px;
+  /* Largura */
+  width: 100%;
+  max-width: 900px;
   /* Espaço entre os elementos */
-  gap: 150px;
+  gap: 24px;
+  /* Estilo flex */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* Estilo do menu que escolhe as fontes */ 
 select {
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 18px;
+  /* Tamanho */
   width: 100%;
+  max-width: 220px;
   cursor: pointer;
 }
 /* Foco */

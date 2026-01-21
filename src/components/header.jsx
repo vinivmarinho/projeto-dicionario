@@ -1,12 +1,12 @@
 // Arquivo cria componente para o cabeçalho e a barra de pesquisa
-import logo from "./assets/logo.svg"; // Importa a logo
-import "./style/header.css"; // Importa o arquivo de estilo
+import logo from "../assets/logo.svg"; // Importa a logo
+import "../style/header.css"; // Importa o arquivo de estilo
 export default function Cabecalho({ fonte, setFonte }) {
   return (
     <header className="cabecalho">
       <Logo />
       <SelecionaFonte fonte={fonte} setFonte={setFonte}/>
-      <input type="checkbox" name="" id="" />
+      <input type="checkbox" />
     </header>
   );
 }
