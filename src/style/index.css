@@ -13,8 +13,10 @@
 }
 body {
   margin: auto; /* Centraliza o body */
-  max-width: 500px; /* Limita a largura */
+  max-width: 700px; /* Limita a largura */
+  min-width: 500px;
   padding: 16px;
+  background-color: orange;
 }
 .Inter {
   font-family: 'Inter';
@@ -28,3 +30,4 @@ body {
 .Merriweather{
   font-family: 'Merriweather';
 }
+

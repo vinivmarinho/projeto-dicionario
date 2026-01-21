@@ -5,5 +5,6 @@ Fluxo do state de fonte:
     4 => Em "SelecionaFonte", as props "fonte" e "setFonte" que foram recebidas por "Cabecalho" serão usadas para "x" coisas. 
 
 Organização front da página:
-   1 => Cabeçalho está dentro de "body", está limitado a 500px(min) e 700px(max), centralizado na página. Obs: ficou transbordando no celular
-   2 => 
+   
+   1=> div "app/arial" está centralizada, com width 500px(min) e 700px(max).Está dentro de body e guardará todos os outros componentes
+   2 => Cabeçalho está dentro da div "app/arial" , está limitado a 500px(min) e 700px(max)
