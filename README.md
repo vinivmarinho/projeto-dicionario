@@ -1,6 +1,10 @@
-# Projeto-dicionario
+# Projeto dicionário
+[Acesse o site](https://vinivmarinho.github.io/projeto-dicionario/)
 
- **Projeto em desenvolvimento**
+ > 🚧**Projeto em desenvolvimento**
+
+ ## Objetivo
+Desenvolver um aplicativo de dicionário em inglês utilizando React e uma API externa, com foco educacional e no aprimoramento de habilidades em consumo de APIs.
  
  Este será um aplicativo de dicionário desenvolvido com **React**, com o objetivo de permitir a busca de palavras em inglês e a visualização de seus significados utilizando uma API externa.
 
@@ -14,8 +18,8 @@ Além disso, o projeto também tem como finalidade o aprimoramento de habilidade
 
 ## Tecnologias Utilizadas
 
-- React
-- JavaScript
+- React (Vite)
+- JavaScript (ES6+)
 - HTML5
 - CSS3
 - Free Dictionary API
