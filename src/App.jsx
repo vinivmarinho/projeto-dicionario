@@ -6,11 +6,14 @@ import SearchBar from "./Components/searchBar.jsx";
 function App() {
   const [fonte, setFonte] = useState("Arial"); // Estado que armazena a fonte atual e escolhida pelo usuário. ("fonte" => state atual. "setFonte" => Função que atualiza a fonte. "Arial" => Valor usado no primeiro render)
   return (
-      <div className={`app ${fonte}`}> {/*Div ganha duas classes: a primeira(app) será usada como um container, a segunda(fonte) é para que no css a font-family da página seja igual a fonte escolhida no menu "select"*/}
-        <Cabecalho fonte={fonte} setFonte={setFonte} />
-        <SearchBar />
-      </div>
+    <div className={`app ${fonte}`}>
+      {" "}
+      {/*Div ganha duas classes: a primeira(app) será usada como um container, a segunda(fonte) é para que no css a font-family da página seja igual a fonte escolhida no menu "select"*/}
+      <Cabecalho fonte={fonte} setFonte={setFonte} />
+      <SearchBar />
+    </div>
   );
 }
 
 export default App;
+// Próxima sessão => Deixar o cabeçalho e searchbar responsivos no celular

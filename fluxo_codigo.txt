@@ -4,9 +4,10 @@ Fluxo do state de fonte:
     3 => O "Cabecalho" por sua vez passa esses props quando chama o componente "SelecionaFonte". Da mesma forma, o que está dentro das chaves se refere as props de "Cabecalho" e o que está antes de "=" se refere as props de "SelecionaFonte"
     4 => Em "SelecionaFonte", as props "fonte" e "setFonte" que foram recebidas por "Cabecalho" serão usadas para "x" coisas. 
 
-Organização front da página:
+
+Organização dos elementos da página:
    1=> Body
         2=> div "app/arial" está centralizada, com width 900px(min) e 1200px(max). Está dentro de body e guardará todos os outros componentes
             2 => Cabeçalho está dentro da div "app/arial" , está limitado a 300px(min) e 750px(max)
-            3=> SearchBar
+            3=> SearchBar tem layout grid para controlar o ícone da lupa
    

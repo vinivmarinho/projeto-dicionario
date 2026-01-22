@@ -1,8 +1,11 @@
 .search_bar{
+  display: grid;
   width: 100%;
   max-width: 900px;
 }
 input#pesquisa_id{
+    /* Estilo grid */
+    grid-area: 1 / 1;
     /* Tamanho e formato */
     width: 100%;
     max-width: 750px;
@@ -30,4 +33,12 @@ input#pesquisa_id::placeholder {
 }
 input#pesquisa_id:hover {
   border-color: #4b5563;
+}
+
+.search_bar label{
+  grid-area: 1 / 1;
+  justify-self: end;
+  align-self: center;
+  margin-right: 16px;
+  color: #9ca3af;
 }
