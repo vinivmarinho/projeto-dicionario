@@ -2,6 +2,7 @@
   display: grid;
   width: 100%;
   max-width: 900px;
+  margin-bottom: 3em;
 }
 input#pesquisa_id{
     /* Estilo grid */
@@ -9,10 +10,10 @@ input#pesquisa_id{
     /* Tamanho e formato */
     width: 100%;
     max-width: 750px;
-    padding: 12px 16px;
+    padding: 20px 16px;
     border-radius: 16px;
     /* Fonte */
-    font-size: 16px;
+    font-size: 20px;
     font-family: inherit; /* Herda a fonte do elemento pai */
     font-weight: bold;
     /* Cores e transição */
@@ -24,7 +25,7 @@ input#pesquisa_id{
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 input#pesquisa_id:focus{
-    border-color: #6366f1;
+  border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(99,102,241,0.35);
 }
 input#pesquisa_id::placeholder {
@@ -41,4 +42,5 @@ input#pesquisa_id:hover {
   align-self: center;
   margin-right: 16px;
   color: #9ca3af;
+  cursor: pointer;
 }
