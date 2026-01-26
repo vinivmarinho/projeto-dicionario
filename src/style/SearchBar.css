@@ -2,7 +2,7 @@
   display: grid;
   width: 100%;
   max-width: 900px;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 input#pesquisa_id{
     /* Estilo grid */

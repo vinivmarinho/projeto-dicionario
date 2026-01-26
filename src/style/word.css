@@ -1,4 +1,11 @@
-.palavra{
+#container_palavra{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#cabecalho_palavra{
     display: grid;
     width: 100%;
 }
@@ -6,15 +13,35 @@
     grid-area: 1 / 1;
     font-size: 4em;
     margin-bottom: 10px;
+    align-self: center;
 }
 #transcricao_fonetica{
     grid-area: 2 / 1;
-    color: #A445DE;
+    color: #A445ED;
     font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
-img{
+img#play{
     grid-area: 1 / 2;
     justify-self: end;
     align-self: center;
     cursor: pointer;
+}
+div#container_classe_gramatical{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
+}
+#classe_gramatical{
+    grid-area: 1 / 1;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+div#linha{
+    grid-area: 1 / 2;
+    align-self: center;
+    font-size: 2.2em;
+    height: 1px;
+    background-color: #2A2A2A;
 }
