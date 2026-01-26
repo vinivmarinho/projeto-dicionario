@@ -1,9 +1,9 @@
 // Arquivo que contém o componente principal "App". Aqui é escolhido qual código vai rodar
 import { useState } from "react";
 import "./style/App.css"; // Importa o estilo
-import Cabecalho from "./Components/header.jsx";
-import SearchBar from "./Components/searchBar.jsx";
-import Palavra from "./Components/word.jsx";
+import Cabecalho from "./components/header.jsx";
+import SearchBar from "./components/searchBar.jsx";
+import Palavra from "./components/word.jsx";
 function App() {
   const [fonte, setFonte] = useState("Arial"); // Estado que armazena a fonte atual e escolhida pelo usuário. ("fonte" => state atual. "setFonte" => Função que atualiza a fonte. "Arial" => Valor usado no primeiro render)
   return (
