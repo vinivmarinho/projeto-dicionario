@@ -7,6 +7,19 @@ Fluxo do state de fonte:
 Organização dos elementos da página:
    1=> Body:
         2=> div "app/arial" está centralizada, com width 900px(min) e 1200px(max). Está dentro de body e guardará todos os outros componentes
-            2 => Cabeçalho está dentro da div "app/arial" , está limitado a 300px(min) e 750px(max)
-            3=> SearchBar tem layout grid para controlar o ícone da lupa
+            3=> header, 900px(max)
+                - img => Logo 
+                - Select => Menu que seleciona as fontes
+                - Input(checkbox) => Botão pra trocar o tema da página
+            4=> SearchBar tem layout grid para controlar o ícone da lupa
+                - Input(text) => Campo de pesquisa
+                - label => Label da pesquisa é um img(lupa)
+            5=> Section tem layout flex para controlar de forma vertical os containers de dentro
+                - div(id=word-header) é um container grid
+                    - h1 => Guarda a palavra pesquisada
+                    - p => Guarda a transcrição fonética da palavra
+                    - img => Imagem do play. Quando clicada, toca a pronúncia da palavra
+                - div(id=part-of-speech-container) é um container grid que guarda 2 elementos horizontalmente alinhados
+                    - p => Guarda a classe gramatical da palavra 
+                    - div(id=line) => Somente uma linha horizontal ao lado de p
    
