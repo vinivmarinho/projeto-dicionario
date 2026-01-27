@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg"; // Importa a logo
 import "../style/header.css"; // Importa o arquivo de estilo
 export default function Header({ font, setFont }) {
   return (
-    <header className="header">
+    <header id="header">
       <Logo />
       <ChooseFont font={font} setFont={setFont}/>
       <input type="checkbox" />
@@ -19,7 +19,7 @@ function Logo() {
 function ChooseFont({ font, setFont }) {
   const fonts = ["Inter", "Poppins", "Roboto", "Merriweather"]; // Lista de fontes
   return (
-    // "select" cria o menu. O "value" é a opção que está selecionada do estado "fonte"
+    // "select" cria o menu. O "value" é a opção que está selecionada do estado "font"
     // O "onChange" dispara quando o usuário escolhe outra opção, depois atualiza o estado
     // Uso o método "map" para criar as opções do menu percorrendo a lista de fontes
     // Obs: o "evento.target" é o elemento HTML que disparou o evento. (<select>, <input> ou <textarea> )
@@ -33,5 +33,4 @@ function ChooseFont({ font, setFont }) {
   );
 }
 
-// Próximo passo => Adicionar a funcionalidade que mude a fonte da página de acordo com a escolha do usuário de fato
 

@@ -1,4 +1,4 @@
-.header {
+#header {
   /* Afasta o cabeçalho da borda superior */
   padding: 30px; 
   display: flex;

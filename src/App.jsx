@@ -4,7 +4,7 @@ import "./style/App.css";
 import Header from "./components/header.jsx";
 import SearchBar from "./components/searchBar.jsx";
 import Word from "./components/word.jsx";
-
+import Meaning from "./components/meaning.jsx"
 
 function App() {
   const [font, setFont] = useState("Arial"); // Estado que armazena a fonte atual e escolhida pelo usuário. ("fonte" => state atual. "setFonte" => Função que atualiza a fonte. "Arial" => Valor usado no primeiro render)
@@ -15,6 +15,7 @@ function App() {
       <Header font={font} setFont={setFont} />
       <SearchBar />
       <Word />
+      <Meaning />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 Fluxo do state de fonte:
-    1 => Os dados são criados em App.jsx. (const [fonte, setFonte] = useState("Arial"))
-    2 => Esses dados são passados ao componente "Cabecalho" em sua chamada. (<Cabecalho fonte={fonte} setFonte={seFonte} />. O que está entre chaves são os valores vindo do App.jsx, o que está antes do sinal "=" se refere aos props que serão passados ao "Cabecalho")
-    3 => O "Cabecalho" por sua vez passa esses props quando chama o componente "SelecionaFonte". Da mesma forma, o que está dentro das chaves se refere as props de "Cabecalho" e o que está antes de "=" se refere as props de "SelecionaFonte"
-    4 => Em "SelecionaFonte", as props "fonte" e "setFonte" que foram recebidas por "Cabecalho" serão usadas para "x" coisas. 
+    1 => Os dados são criados em App.jsx. (const [font, setFont] = useState("Arial"))
+    2 => Esses dados são passados ao componente "Header" em sua chamada. (<Header font={font} setFont={seFont} />. O que está entre chaves são os valores vindo do App.jsx, o que está antes do sinal "=" se refere aos props que serão passados ao "Header")
+    3 => O "Header" por sua vez passa esses props quando chama o componente "ChooseFont". Da mesma forma, o que está dentro das chaves se refere as props de "Cabecalho" e o que está antes de "=" se refere as props de "ChooseFont"
+    4 => Em "ChooseFont", as props "font" e "setFont" que foram recebidas por "Header" serão usadas para "x" coisas. 
 
 Organização dos elementos da página:
    1=> Body:
