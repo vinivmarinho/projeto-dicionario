@@ -1,44 +1,44 @@
-#container_palavra{
+#word-container{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
 }
 
-#cabecalho_palavra{
+#word-header{
     display: grid;
     width: 100%;
 }
-#palavra_pesquisada{
+#searched-word{
     grid-area: 1 / 1;
     font-size: 4em;
     margin-bottom: 10px;
     align-self: center;
 }
-#transcricao_fonetica{
+#phonetic-transcription{
     grid-area: 2 / 1;
     color: #A445ED;
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 30px;
 }
-img#play{
+img#play-button{
     grid-area: 1 / 2;
     justify-self: end;
     align-self: center;
     cursor: pointer;
 }
-div#container_classe_gramatical{
+div#part-of-speech-container{
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 20px;
 }
-#classe_gramatical{
+#part-of-speech{
     grid-area: 1 / 1;
     font-size: 1.7em;
     font-weight: bold;
 }
-div#linha{
+div#line{
     grid-area: 1 / 2;
     align-self: center;
     font-size: 2.2em;

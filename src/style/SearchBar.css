@@ -1,10 +1,10 @@
-.search_bar{
+.search-bar{
   display: grid;
   width: 100%;
   max-width: 900px;
   margin-bottom: 2em;
 }
-input#pesquisa_id{
+input#search{
     /* Estilo grid */
     grid-area: 1 / 1;
     /* Tamanho e formato */
@@ -24,19 +24,19 @@ input#pesquisa_id{
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-input#pesquisa_id:focus{
+input#search:focus{
   border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(99,102,241,0.35);
 }
-input#pesquisa_id::placeholder {
+input#search::placeholder {
   color: #717680;
   font-weight: 500;
 }
-input#pesquisa_id:hover {
+input#search:hover {
   border-color: #4b5563;
 }
 
-.search_bar label{
+.search-bar label{
   grid-area: 1 / 1;
   justify-self: end;
   align-self: center;
