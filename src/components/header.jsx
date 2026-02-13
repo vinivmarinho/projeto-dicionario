@@ -6,13 +6,17 @@ export default function Header({ font, setFont }) {
     <header id="header">
       <Logo />
       <ChooseFont font={font} setFont={setFont}/>
-      <input type="checkbox" />
     </header>
   );
 }
 // Componente da logo
 function Logo() {
-  return <img src={logo} alt="Logo" />;
+  return (
+    <>
+      <img src={logo} alt="Logo" />
+      <h1>English dictionary</h1>
+    </>
+  );
 }
 
 // Controla a escolha da fonte
@@ -23,7 +27,10 @@ function ChooseFont({ font, setFont }) {
     // O "onChange" dispara quando o usuário escolhe outra opção, depois atualiza o estado
     // Uso o método "map" para criar as opções do menu percorrendo a lista de fontes
     // Obs: o "evento.target" é o elemento HTML que disparou o evento. (<select>, <input> ou <textarea> )
+    // 
     <select value={font} onChange={(event) => setFont(event.target.value)}>
+      {/* Placeholder */ }
+      <option value="" disabled>Escolha a fonte</option>
       {fonts.map((f) => (
         <option key={f} value={f}>
           {f}
