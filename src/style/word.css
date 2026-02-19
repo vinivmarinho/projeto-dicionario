@@ -17,7 +17,7 @@
 }
 #phonetic-transcription{
     grid-area: 2 / 1;
-    color: #A445ED;
+    color: #ff6a00;
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 30px;
@@ -27,6 +27,11 @@ img#play-button{
     justify-self: end;
     align-self: center;
     cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+img#play-button:hover{
+    transform: translatey(-10px);
 }
 div#part-of-speech-container{
     display: grid;

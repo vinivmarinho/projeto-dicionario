@@ -14,7 +14,7 @@
     margin-bottom: 1.5em;
 }
 ul li::marker{
-    color: #A445ED;
+    color: #ff6a00;
 }
 .synonyms{
     display: flex;
@@ -27,7 +27,7 @@ ul li::marker{
 }
 .synonyms li{
     list-style-type: none;
-    color: #A445ED;
+    color: #ff6a00;
     font-size: 1.2em;
     align-self: center;
     cursor: pointer;

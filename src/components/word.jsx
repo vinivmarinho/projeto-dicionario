@@ -1,4 +1,4 @@
-import play from "../assets/icon-play.svg";
+import play from "../assets/orange-button.png";
 import "../style/word.css";
 export default function Word() {
   return (
