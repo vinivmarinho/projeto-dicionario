@@ -1,6 +1,6 @@
 import play from "../assets/orange-button.png";
 import "../style/word.css";
-export default function Word({ word , transcription, partOfSpeech,  }) {
+export default function Word({ word , transcription, partOfSpeech, loading  }) {
   return (
     <section id="word-container">
       <div id="word-header">
