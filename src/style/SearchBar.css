@@ -39,12 +39,7 @@ input#searchBar:hover {
   border-color: #4b5563;
 }
 
-.search-bar-container label{
-  grid-area: 1 / 1;
-  justify-self: end;
-  align-self: center;
-  margin-right: 16px;
-}
+
 
 .search-bar-container button{
   background: linear-gradient(to right, #ff8c1a, #ff6a00);
@@ -57,6 +52,11 @@ input#searchBar:hover {
   border-radius: 20px;
   padding: 12px 20px;
 
+
+  grid-area: 1 / 1;
+  justify-self: end;
+  align-self: center;
+  margin-right: 16px;
   
 }
 
