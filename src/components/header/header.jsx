@@ -1,6 +1,6 @@
 // Arquivo cria componente para o cabeçalho e a barra de pesquisa
-import logo from "../assets/logo.svg"; // Importa a logo
-import "../style/header.css"; // Importa o arquivo de estilo
+import logo from "../../assets/logo.svg"; // Importa a logo
+import "./header.css"; // Importa o arquivo de estilo
 export default function Header({ font, setFont }) {
   return (
     <header id="header">
@@ -14,7 +14,7 @@ function Logo() {
   return (
     <>
       <img src={logo} alt="Logo" />
-      <h1>English dictionary</h1>
+      <h1>English Dictionary</h1>
     </>
   );
 }

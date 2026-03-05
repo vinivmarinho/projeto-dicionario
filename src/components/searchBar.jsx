@@ -31,6 +31,7 @@ export default function SearchBar() {
             setLoading(false);
         }
         
+        
         // alert(wordData.entries[0].senses[0].definition) // Pega só o objeto da primeira posição de senses (ou seja, só UMA definição. Preciso fazer a posição ficar dinâmica)
         // alert(wordData.entries[0].senses[0].definition)
     }
@@ -44,4 +45,3 @@ export default function SearchBar() {
         </div>
     )
 }
-// Juntar os componentes "SearchBar" e "Word" para que eu possa usar os dados recebidos da API e manipulá-los no componente "Word"

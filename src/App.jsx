@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./style/App.css"; 
 import "./style/main.css";
-import Header from "./components/header.jsx";
+import Header from "./components/header/header.jsx";
 import SearchBar from "./components/searchBar.jsx";
 import Meaning from "./components/meaning.jsx"
 function App() {
@@ -11,11 +11,7 @@ function App() {
     <div className={`app ${font}`}>
       {/*Div ganha duas classes: a primeira(app) será usada como um container, a segunda(fonte) será usada para controlar o estilo de fonte via CSS"*/}
       <Header font={font} setFont={setFont} />
-      <main>
-        <SearchBar />
-        <Meaning />
-        
-      </main>
+
     </div>
   );
 }
