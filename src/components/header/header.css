@@ -63,8 +63,9 @@ select:focus {
   #header{
     height: 150px;
     display: grid;
-    grid-template-columns: 10px 220px;
-    grid-template-rows: 40px 10px;
+    /* grid-template-columns: 10px 220px; */
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px 10px; 
     justify-content: start;
   }
   #header img{
