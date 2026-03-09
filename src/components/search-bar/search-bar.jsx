@@ -1,5 +1,5 @@
-import "../style/SearchBar.css";
-import Word from "./word.jsx";
+import "./search-bar.css";
+import Word from "../word/word.jsx";
 import { useState } from "react";
 
 export default function SearchBar() {
