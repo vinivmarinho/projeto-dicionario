@@ -1,4 +1,4 @@
-import "../style/meaning.css"
+import "./meaning.css"
 export default function Meaning() {
     return(
         <div id="meaning-container">
