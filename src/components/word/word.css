@@ -1,3 +1,4 @@
+/* ===== BASE (Desktop) ===== */
 #word-container{
     display: flex;
     flex-direction: column;
@@ -15,9 +16,7 @@
     margin-bottom: 10px;
     align-self: center;
 
-    @media(max-width: 400px) {
-    font-size: 2.8em;
-    }
+ 
 }
 #phonetic-transcription{
     grid-area: 2 / 1;
@@ -33,11 +32,6 @@ img#play-button{
     cursor: pointer;
     width: 150px;
     height: 150px;
-
-    @media(max-width: 400px) {
-        width: 100px;
-        height: 100px;
-    }
 }
 img#play-button:hover{
     transform: translatey(-10px);
@@ -59,4 +53,17 @@ div#line{
     font-size: 2.2em;
     height: 1px;
     background-color: #2A2A2A;
+}
+
+/* ===== BASE (Mobile) ===== */
+
+@media (max-width: 400px) {
+    #searched-word{
+        font-size: 2.8em;
+    }
+    img#play-button{
+        width: 100px;
+        height: 100px;
+    }
+    
 }

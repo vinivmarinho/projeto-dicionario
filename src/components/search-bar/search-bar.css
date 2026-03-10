@@ -1,3 +1,4 @@
+/* ===== BASE (Desktop) ===== */
 .search-bar-container{
   display: grid;
   width: 100%;
@@ -55,11 +56,25 @@ input#searchBar:hover {
   justify-self: end;
   align-self: center;
   margin-right: 16px;
-  
 }
 
 .search-bar-container button:hover{
   background-color: #d45500;
   transform: translateY(-2px);
   cursor: pointer;
+}
+
+/* ===== BASE (mobile) ===== */
+@media(max-width: 400px) {
+  input#searchBar::placeholder {
+    font-size: 0.6em;
+  }
+}
+@media(max-width: 480px) {
+  input#searchBar::placeholder {
+    font-size: 0.8em;
+  }
+  .search-bar-container button {
+    padding: 8px 16px;
+  }
 }

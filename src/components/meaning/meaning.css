@@ -1,3 +1,4 @@
+/* ===== BASE (Desktop) ===== */
 #meaning-container{
     display: flex;
     flex-direction: column;
@@ -24,6 +25,7 @@ ul li::marker{
 .synonyms p{
     color:  #757575;
     font-size: 1.7em;
+
 }
 .synonyms li{
     list-style-type: none;
@@ -31,4 +33,24 @@ ul li::marker{
     font-size: 1.2em;
     align-self: center;
     cursor: pointer;
+}
+
+/* ===== BASE (mobile) ===== */
+
+@media (max-width: 480px) {
+    .meaning{
+        font-size: 1.3em;
+    }
+
+    #meaning-container ul {
+        font-size: 1em;
+    }
+
+    .synonyms p{
+        font-size: 1.2em;
+    }
+
+    .synonyms li{
+        font-size: 0.9em;
+    }
 }

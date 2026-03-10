@@ -1,3 +1,4 @@
+/* ===== BASE (Desktop) ===== */
 #header {
   /* Afasta o cabeçalho da borda superior */
   padding: 30px; 
@@ -16,10 +17,6 @@
 
 #header h1{
   font-size: 1.8em;
-
-  @media(max-width: 480px) {
-    font-size: 1.6em;
-  }
 }
 /* Estilo do menu que escolhe as fontes */ 
 select {
@@ -37,11 +34,6 @@ select {
   width: 100%;
   max-width: 220px;
   cursor: pointer;
-  
-
-  @media(max-width: 480px) {
-    font-size: 0.8em;
-  }
 
 }
 /* Estiliza uma seta */
@@ -58,8 +50,18 @@ select:focus {
 }
 
 
-/* Layout para celular */
-@media screen and (max-width: 400px) {
+/* ===== BASE (mobile) ===== */
+@media (max-width: 480px) {
+  #header h1{
+    font-size: 1.5em;
+  }
+  select{
+    font-size: 0.8em;
+  }
+} 
+
+
+@media (max-width: 400px) {
   #header{
     height: 150px;
     display: grid;

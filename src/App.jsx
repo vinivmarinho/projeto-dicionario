@@ -10,7 +10,7 @@ function App() {
   return (
     <div className={`app ${font}`}>
       {/*Div ganha duas classes: a primeira(app) será usada como um container, a segunda(fonte) será usada para controlar o estilo de fonte via CSS"*/}
-      <Header />
+      <Header font={font} setFont={setFont} />
       <main>
         <SearchBar />
         <Meaning />
