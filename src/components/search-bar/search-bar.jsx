@@ -10,23 +10,20 @@ export default function SearchBar() {
     const [matchedWord, setMatchedApiWord] = useState("");
     const [wordTranscription, setwordTranscription] = useState("");
     const [partOfSpeech, setPartOfSpeech] = useState("");
-    function handleSearch() {
+    async function handleSearch() {
         // Palavra não definida
         if (!searchedWord) return;
         setLoading(true);
         try {
-            fetch(`https://freedictionaryapi.com/api/v1/entries/en/${searchedWord}`)
-            
-            .then(response => response.json())
-            .then(data => {
-                setWordData(data); 
-                setMatchedApiWord(data.word);
-                setwordTranscription(data.entries[0].pronunciations[0].text)
-                setPartOfSpeech(data.entries[0].partOfSpeech );
-                })
+            const response = await fetch(`https://freedictionaryapi.com/api/v1/entries/en/${searchedWord}`);
+            const data = await response.json();
+            setWordData(data); 
+            setMatchedApiWord(data.word);
+            setwordTranscription(data.entries[0].pronunciations[0].text)
+            setPartOfSpeech(data.entries[0].partOfSpeech );
         }
         catch(error) {
-            alert(`Erro ao buscar palavra: ${error}`)
+            alert(`Erro ao buscar palavra`)
         }
         finally{
             setLoading(false);
