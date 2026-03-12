@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 problems.txt
-teste.json
+fluxo_codigo.txt
 *.local
 
 # Editor directories and files

@@ -1,0 +1,167 @@
+{
+  "word": "keyboard",
+  "entries": [
+    {
+        
+      "language": {
+        "code": "en",
+        "name": "English"
+      },
+
+      "partOfSpeech": "noun",
+      "pronunciations": [
+        {
+          "type": "ipa",
+          "text": "/ˈki.bɔɹd/",
+          "tags": [
+            "US"
+          ]
+        },
+        
+        {
+          "type": "ipa",
+          "text": "/ˈkiː.bɔːd/",
+          "tags": [
+            "General Australian",
+            "UK"
+          ]
+        }
+      ],
+      
+      "forms": [
+        {
+          "word": "keyboards",
+          "tags": [
+            "plural"
+          ]
+        }
+      ],
+
+      "senses": [
+        {
+          "definition": "(computing, etc.) A set of keys laid out in a grid-like pattern, used for typing on a typewriter, computer etc.",
+          "tags": [
+            "usually"
+          ],
+          "examples": [],
+          "quotes": [],
+          "synonyms": [],
+          "antonyms": [],
+          "subsenses": []
+        },
+        {
+          "definition": "(music) A component of many instruments, including the piano, organ, and harpsichord, consisting of usually black and white keys that cause different tones to be produced when struck.",
+          "tags": [],
+          "examples": [],
+          "quotes": [],
+          "synonyms": [],
+          "antonyms": [],
+          "subsenses": []
+        },
+        {
+          "definition": "(music) An electronic device containing a keyboard (preceding sense), especially one that is capable of producing musical sounds when the keys are played.",
+          "tags": [],
+          "examples": [],
+          "quotes": [],
+          "synonyms": [
+            "electronic keyboard",
+            "synthesizer"
+          ],
+          "antonyms": [],
+          "subsenses": []
+        }
+      ],
+      "synonyms": [],
+      "antonyms": []
+    },
+    // Acabou o objeto na posição "0" de entries
+
+
+    {
+      "language": {
+        "code": "en",
+        "name": "English"
+      },
+      "partOfSpeech": "verb",
+      "pronunciations": [
+        {
+          "type": "ipa",
+          "text": "/ˈki.bɔɹd/",
+          "tags": [
+            "US"
+          ]
+        },
+        {
+          "type": "ipa",
+          "text": "/ˈkiː.bɔːd/",
+          "tags": [
+            "General Australian",
+            "UK"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "word": "keyboards",
+          "tags": [
+            "present",
+            "singular",
+            "third-person"
+          ]
+        },
+        {
+          "word": "keyboarding",
+          "tags": [
+            "participle",
+            "present"
+          ]
+        },
+        {
+          "word": "keyboarded",
+          "tags": [
+            "participle",
+            "past"
+          ]
+        },
+        {
+          "word": "keyboarded",
+          "tags": [
+            "past"
+          ]
+        }
+      ],
+      "senses": [
+        {
+          "definition": "(intransitive) To type on a computer keyboard.",
+          "tags": [
+            "intransitive"
+          ],
+          "examples": [
+            "Keyboarding is the part of this job I hate the most."
+          ],
+          "quotes": [
+            {
+              "text": "The earliest hardcore hackers would not stumble in to their predawn keyboarding for another two hours.",
+              "reference": "1995, Richard Powers, Galatea 2.2, Vintage (2019), page 16:"
+            }
+          ],
+          "synonyms": [],
+          "antonyms": [],
+          "subsenses": []
+        }
+      ],
+      "synonyms": [],
+      "antonyms": []
+    }
+  ],
+
+  // Acabou o entries
+
+  "source": {
+    "url": "https://en.wiktionary.org/wiki/keyboard",
+    "license": {
+      "name": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  }
+}

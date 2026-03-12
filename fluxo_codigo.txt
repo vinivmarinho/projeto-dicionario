@@ -37,10 +37,6 @@ Organização dos elementos da página:
                 - div "synonyms" é um container que guardará uma lista com sinônimos
                     - p => Palavra "Synonyms"
                     - Vários li's com 
-                    
--Breakpoints:
-    - até 400px
-    - até 480px (celulares pequenos)
     
                 
 
