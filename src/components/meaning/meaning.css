@@ -33,6 +33,7 @@ ul li::marker{
     font-size: 1.2em;
     align-self: center;
     cursor: pointer;
+    gap: 5px;
 }
 
 /* ===== BASE (mobile) ===== */

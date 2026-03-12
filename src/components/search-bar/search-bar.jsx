@@ -1,5 +1,6 @@
 import "./search-bar.css";
 import Word from "../word/word.jsx";
+import Meaning from "../meaning/meaning.jsx";
 import { useState } from "react";
 
 export default function SearchBar() {
@@ -29,19 +30,28 @@ export default function SearchBar() {
         }
         finally{
             setLoading(false);
+            
         }
         
         
-        // alert(wordData.entries[0].senses[0].definition) // Pega só o objeto da primeira posição de senses (ou seja, só UMA definição. Preciso fazer a posição ficar dinâmica)
+         // alert(wordData.entries[0].senses[0].definition); Pega só o objeto da primeira posição de senses (ou seja, só UMA definição. Preciso fazer a posição ficar dinâmica)
         // alert(wordData.entries[0].senses[0].definition)
     }
 
     return(
-        <div className="search-bar-container">
-            <input type="text" id="searchBar" value={searchedWord} onChange={(event) => setSearchedWord(event.target.value)} placeholder="🔍Pesquise por alguma palavra" />
-            <button onClick={handleSearch}>Search</button>
-            {loading && <Word word="Loading..." />}
-            {!loading && <Word word={wordData ? matchedWord : "Keyboard"} transcription={wordData ? wordTranscription : "/ˈkiː.bɔːd/"} partOfSpeech={wordData ? partOfSpeech : "noun"} /> }
-        </div>
+        <>
+            <div className="search-bar-container">
+                <input type="text" id="searchBar" value={searchedWord} onChange={(event) => setSearchedWord(event.target.value)} placeholder="🔍Pesquise por alguma palavra" />
+                <button onClick={handleSearch}>Search</button>
+                {loading && <Word word="Loading..." />}
+                {!loading && (
+                    <Word word={wordData ? matchedWord : "Keyboard"} transcription={wordData ? wordTranscription : "/ˈkiː.bɔːd/"} partOfSpeech={wordData ? partOfSpeech : "noun"} /> 
+                
+                )}
+                {!loading && (
+                    <Meaning wordData= {wordData}/>
+                )}
+            </div>
+        </>
     )
 }

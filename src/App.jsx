@@ -13,7 +13,6 @@ function App() {
       <Header font={font} setFont={setFont} />
       <main>
         <SearchBar />
-        <Meaning />
       </main>
     </div>
   );
