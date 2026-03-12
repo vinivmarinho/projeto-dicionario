@@ -16,18 +16,23 @@ export default function SearchBar() {
         setLoading(true);
         try {
             const response = await fetch(`https://freedictionaryapi.com/api/v1/entries/en/${searchedWord}`);
+            if (!response.ok) {
+                throw new Error("Palavra não encontrada")
+            }
             const data = await response.json();
+            
             setWordData(data); 
             setMatchedApiWord(data.word);
-            setwordTranscription(data.entries[0].pronunciations[0].text)
-            setPartOfSpeech(data.entries[0].partOfSpeech );
+            setwordTranscription(
+                data?.entries[0]?.pronunciations[0]?.text || "No transcription"
+            );
+            setPartOfSpeech(data?.entries[0]?.partOfSpeech);
         }
         catch(error) {
-            alert(`Erro ao buscar palavra`)
+            alert(`${error}`)
         }
         finally{
             setLoading(false);
-            
         }
         
         
