@@ -1,5 +1,5 @@
 import "./meaning.css"
-export default function Meaning({ wordData }) {
+export default function Meaning({ wordData}) {
     return(
         <div id="meaning-container">
             <h2 className="meaning">Meaning</h2>

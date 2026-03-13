@@ -1,0 +1,9 @@
+h1.emoji{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 3em;
+}
+p.error-message{
+    text-align: center;
+    font-size: 3em;
+}

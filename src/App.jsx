@@ -3,8 +3,7 @@ import { useState } from "react";
 import "./style/App.css"; 
 import "./style/main.css";
 import Header from "./components/header/header.jsx";
-import SearchBar from "./components/search-bar/search-bar.jsx";
-import Meaning from "./components/meaning/meaning.jsx"
+import SearchBar from "./components/searchBar/searchBar.jsx";
 function App() {
   const [font, setFont] = useState(""); // Estado que armazena a fonte atual e escolhida pelo usuário
   return (
