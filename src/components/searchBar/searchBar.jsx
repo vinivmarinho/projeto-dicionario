@@ -9,7 +9,7 @@ export default function SearchBar() {
     const [wordData, setWordData] = useState("");
     const [loading, setLoading] = useState(false);
     const [matchedWord, setMatchedApiWord] = useState("");
-    const [wordTranscription, setwordTranscription] = useState("");
+    const [wordTranscription, setWordTranscription] = useState("");
     const [partOfSpeech, setPartOfSpeech] = useState("");
     const [error, setError] = useState(false);
     async function handleSearch() {
@@ -17,33 +17,26 @@ export default function SearchBar() {
         if (!searchedWord) return;
         setLoading(true);
         setError(false);
-        console.log("passou 1")
         try {
             const response = await fetch(`https://freedictionaryapi.com/api/v1/entries/en/${searchedWord}`);
-            if (!response.ok) {
-                throw new Error("Palavra não encontrada");
-            }
+            
             const data = await response.json();
-            console.log("passou 2")
-            setWordData(data); 
-            console.log("passou 3")
+            setWordData(data);
             setMatchedApiWord(data.word);
-            console.log("passou 4")
-            setwordTranscription(
+            setWordTranscription(
                 data?.entries[0]?.pronunciations[0]?.text || "No transcription"
             );
-            console.log("passou 5")
             setPartOfSpeech(data?.entries[0]?.partOfSpeech);
-            console.log("passou 6")
+            if (data.entries.length === 0) {
+                throw new Error("Palavra não encontrada");
+            }
         }
         catch(error) {
             alert(`Não foi possível encontrar a palavra`);
             setError(true);
-            console.log("passou 7")
         }
         finally{
             setLoading(false);
-            console.log("passou 8")
             
         }
         
