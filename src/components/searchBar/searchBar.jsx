@@ -32,7 +32,6 @@ export default function SearchBar() {
             }
         }
         catch(error) {
-            alert(`Não foi possível encontrar a palavra`);
             setError(true);
         }
         finally{
