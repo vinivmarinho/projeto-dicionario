@@ -13,6 +13,7 @@ dist-ssr
 problems.txt
 fluxo_codigo.txt
 *.local
+teste.json
 
 # Editor directories and files
 .vscode/*

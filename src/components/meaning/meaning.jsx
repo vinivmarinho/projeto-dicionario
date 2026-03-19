@@ -2,10 +2,16 @@ import "./meaning.css"
 export default function Meaning({ entry }) {
     return(
         <div id="meaning-container">
+            <div id="part-of-speech-container">
+                <p id="part-of-speech">{entry.partOfSpeech}</p>
+                <div id="line"></div>
+            </div>
+
             <h2 className="meaning">Meaning</h2>
-            
+            {/* Queria colocar o part of speech aqui */}
             <ul>
                 {entry.senses.map((sense, index) => (
+                    
                     <li key={index}>
                         <p>{sense.definition}</p>
 

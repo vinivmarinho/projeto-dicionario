@@ -3,9 +3,31 @@
     display: flex;
     flex-direction: column;
 }
+ div#part-of-speech-container{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
+    margin-bottom: 2em;
+}
+#meaning-container #part-of-speech{
+    grid-area: 1 / 1;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+#meaning-container div#line{
+    grid-area: 1 / 2;
+    align-self: center;
+    font-size: 2.2em;
+    height: 1px;
+    background-color: #2A2A2A;
+}
 .meaning{
-    font-weight: normal;
-    margin-bottom: 0.5em;
+    color: #a855f7; /* roxo vibrante */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-left: 4px solid #a855f7;
+    padding-left: 10px;
 }
 #meaning-container ul{
     display: flex;
@@ -24,7 +46,7 @@ ul li::marker{
 }
 .synonyms p{
     color:  #757575;
-    font-size: 1.7em;
+    font-size: 1.3em;
 
 }
 .synonyms span{

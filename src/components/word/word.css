@@ -36,24 +36,7 @@ img#play-button{
 img#play-button:hover{
     transform: translatey(-10px);
 }
-div#part-of-speech-container{
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 20px;
-    margin-bottom: 2em;
-}
-#part-of-speech{
-    grid-area: 1 / 1;
-    font-size: 1.7em;
-    font-weight: bold;
-}
-div#line{
-    grid-area: 1 / 2;
-    align-self: center;
-    font-size: 2.2em;
-    height: 1px;
-    background-color: #2A2A2A;
-}
+
 
 /* ===== BASE (Mobile) ===== */
 
