@@ -12,6 +12,7 @@ export default function SearchBar() {
     const [wordTranscription, setWordTranscription] = useState("");
     const [partOfSpeech, setPartOfSpeech] = useState("");
     const [error, setError] = useState(false);
+    /* const [posicao, setPosicao] = useState=("0"); */ // Guarda posição que é usada por entries para renderizar os diferentes significados da palavra
     async function handleSearch() {
         // Palavra não definida
         if (!searchedWord) return;
@@ -50,7 +51,10 @@ export default function SearchBar() {
                 {!loading && !error &&(
                     <>
                         <Word word={wordData ? matchedWord : "Keyboard"} transcription={wordData ? wordTranscription : "/ˈkiː.bɔːd/"} partOfSpeech={wordData ? partOfSpeech : "noun"} /> 
-                        <Meaning wordData={wordData}/>
+                        {wordData?.entries?.map((entry, index) => (
+                            <Meaning key={index} entry={entry} />
+                        ))}
+                        {/* <Meaning wordData={wordData}/> */}
                     </>
                 )}
                 {!loading && error && (

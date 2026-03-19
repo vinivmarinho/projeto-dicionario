@@ -27,7 +27,7 @@ ul li::marker{
     font-size: 1.7em;
 
 }
-.synonyms li{
+.synonyms span{
     list-style-type: none;
     color: #ff6a00;
     font-size: 1.2em;
