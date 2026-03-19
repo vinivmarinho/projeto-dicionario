@@ -19,7 +19,7 @@ export default function SearchBar() {
         setLoading(true);
         setError(false);
         try {
-            const response = await fetch(`https://freedictionaryapi.com/api/v1/entries/en/${searchedWord}`);
+            const response = await fetch(`https://freedictionaryapi.com/api/v1/entries/en/${searchedWord.toLowerCase()}`);
             
             const data = await response.json();
             setWordData(data);
