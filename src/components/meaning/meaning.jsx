@@ -14,11 +14,11 @@ export default function Meaning({ entry }) {
                     
                     <li key={index}>
                         <p>{sense.definition}</p>
-
+                        <p id='example'>{sense.examples[0]}</p>
                         {sense.synonyms && sense.synonyms.length > 0 && (
                             <div className="synonyms">
                                 <p>Synonyms:</p>
-                                <span>{sense.synonyms.join(" , ")}</span>
+                                <span>{sense.synonyms.join(" | ")}</span>
                             </div>
                         )}
                     </li>

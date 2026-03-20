@@ -39,10 +39,15 @@
 ul li::marker{
     color: #ff6a00;
 }
+p#example{
+    color:  #757575;
+    margin-top: 0.7em;
+}
 .synonyms{
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
+    margin-top: 2em;
 }
 .synonyms p{
     color:  #757575;
